@@ -1,7 +1,7 @@
 version: 1
 env:
   variables:
-      ORIGIN: https://master.d3nm5rzyjgif7h.amplifyapp.com
+      ORIGIN: https://${AWS_BRANCH//\//-}.${AWS_APP_ID}.amplifyapp.com
       STACKNAME: amplify-aws-serverless-shopping-cart
 backend:
   phases:
